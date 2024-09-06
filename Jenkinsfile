@@ -14,16 +14,6 @@ pipeline {
             }
         }
 
-      stage('Prepare') {
-            steps {
-                script {
-                    // Install dependencies and Husky
-                    bat 'npm install'
-                    bat 'npm run prepare'
-                }
-            }
-        }
-
         stage('Build') {
             steps {
                 script {
