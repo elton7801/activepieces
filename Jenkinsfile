@@ -10,7 +10,7 @@ pipeline {
 
         stage('Checkout') {
             steps {
-                git branch: 'CI-Sia', url: 'https://github.com/elton7801/activepieces.git'
+                git branch: 'main', url: 'https://github.com/elton7801/activepieces.git'
             }
         }
 
